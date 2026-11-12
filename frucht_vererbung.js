@@ -28,7 +28,7 @@ f.status();
 
 class Banane extends Frucht {
     constructor() {
-        super({ sauer = 0.1, preis: 1, gewicht: 20 });
+        super({ sauer: 0.1, preis: 1, gewicht: 20 });
     }
 
     peel() {
