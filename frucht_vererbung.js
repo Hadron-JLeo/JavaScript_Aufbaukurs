@@ -5,6 +5,7 @@ class Frucht {
     #suess = 0;
     #preis = 0;
     #gewicht = 0; // Gewicht in Gramm
+    #groesse = 0;// in cm
 
     constructor({ sauer = 0, suess = 0, preis = 0, gewicht = 0 } = {}) {
         this.#sauer = sauer;
