@@ -1,27 +1,4 @@
-class Frucht {
-    static menge = 0;
 
-    #sauer = 0;
-    #suess = 0;
-    #preis = 0;
-    #gewicht = 0; // Gewicht in Gramm
-
-    constructor({ sauer = 0, suess = 0, preis = 0, gewicht = 0 } = {}) {
-        this.#sauer = sauer;
-        this.#suess = suess;
-        this.#preis = preis;
-        this.#gewicht = gewicht;
-        Frucht.menge += 1;
-    }
-
-    get preis() {
-        return this.#preis;
-    }
-
-    status() {
-        console.log(`${this.constructor.name} ist Sauer um ${this.#sauer} Prozent und kostet ${this.#preis} EUR. ${this.#gewicht}g schwer!`);
-    }
-}
 
 const f = new Frucht();
 f.status();
